@@ -1,0 +1,24 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Каждый квадрат является экземпляром класса rec
+           с помощбю которого мы к нему обращаемя-->
+<rect class="rec" x="14" y="20" width="30" height="30" fill="red"/>
+<rect class="rec" x="14" y="55" width="30" height="30" fill="red"/>
+<rect class="rec" x="14" y="90" width="30" height="30" fill="red"/>
+<rect class="rec" x="114" y="20" width="30" height="30" fill="red"/>
+<rect class="rec" x="114" y="55" width="30" height="30" fill="red"/>
+<rect class="rec" x="114" y="90" width="30" height="30" fill="red"/>
+<rect class="rec" x="214" y="20" width="30" height="30" fill="red"/>
+<rect class="rec" x="214" y="55" width="30" height="30" fill="red"/>
+<rect class="rec" x="214" y="90" width="30" height="30" fill="red"/>
+<rect  class="rec" x="64" y="20" width="30" height="30" fill="red"/>
+<rect  class="rec" x="64" y="55" width="30" height="30" fill="red"/>
+<rect  class="rec" x="64" y="90" width="30" height="30" fill="red"/>
+<rect  class="rec" x="164" y="20" width="30" height="30" fill="red"/>
+<rect  class="rec" x="164" y="55" width="30" height="30" fill="red"/>
+<rect  class="rec" x="164" y="90" width="30" height="30" fill="red"/>
+<rect  class="rec" x="264" y="20" width="30" height="30" fill="red"/>
+<rect  class="rec" x="264" y="55" width="30" height="30" fill="red"/>
+<rect  class="rec" x="264" y="90" width="30" height="30" fill="red"/>
+<rect   x="0.5" y="0.5" width="299" height="299" stroke="black"/>
+</svg>
+

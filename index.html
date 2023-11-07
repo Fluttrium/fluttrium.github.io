@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ХУЙ</title>
+</head>
+<body>
+    <!-- Указываем svg как object у которого есть id с помошью которого будем обращаться к нему-->
+<object data="images/frame.svg" type="image/svg+xml" id="svgObject"></object>
+<script>
+    // svgObject теперь равен объекту с id svgObject, тоесть нашему object
+    var svgObject = document.getElementById('svgObject');
+
+    // Эта функция обозначает ивент которой будет происходить по нажатию
+    function changeColor(event) {
+        var circleElement = event.target;
+        // Меняем цвет по нажатию на синий если он был красный,
+        // а если он не красный то меняем на красный, но здесь не обрабатывается
+        // само нажатите только его логика
+        if (circleElement.getAttribute('fill') === 'red') {
+            circleElement.setAttribute('fill', 'blue');
+        } else {
+            circleElement.setAttribute('fill', 'red');
+        }
+    }
+    //Здесь  сначала загружается svg в код для работы над ним
+    svgObject.addEventListener('load', function () {
+        // Создается переменая circleElements,
+        // которая получает в себя все экземпляры класса rec из svg
+        var svgDoc = svgObject.contentDocument;
+        var circleElements = svgDoc.getElementsByClassName('rec');
+
+        // Цикл нужен для оброверки состояния каждого объекта поочереди
+        for (var i = 0; i < circleElements.length; i++) {
+            // Назначаем обработчик события для каждого элемента
+            circleElements[i].addEventListener('click', changeColor);
+        }
+    });
+</script>
+</body>
+</html>
